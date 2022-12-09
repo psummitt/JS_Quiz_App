@@ -74,26 +74,28 @@ const quizData = [{
 let currentQuestion = 0;
 
 function loadQuiz() {
-const currentQuizData = quizData[currentQuiz];
+    const currentQuizData = quizData[currentQuiz];
 
-questionE1.innerText = currentQuizData.question;
-a_text.innerText = currentQuizData.a;
-b_text.innerText = currentQuizData.b;
-c_text.innerText = currentQuizData.c;
-d_text.innerText = currentQuizData.d;
-}
+    questionE1.innerText = currentQuizData.question;
+    a_text.innerText = currentQuizData.a;
+    b_text.innerText = currentQuizData.b;
+    c_text.innerText = currentQuizData.c;
+    d_text.innerText = currentQuizData.d;
+    }
 
 function getSelected() {
+    const answers = document.querySelectorAll('answer');
 
+    answers.forEach();
 }
 
 submitBtn.addEventListener("click", () => {
-currentQuizz++;
+    currentQuizz++;
 
-if (currentQuiz < quizData.length) {
-    loadQuiz();
-} else {
-    // TODO: Show results
-    alert("You finished!  Get yourself a lemonade");
-}
+    if (currentQuiz < quizData.length) {
+        loadQuiz();
+    } else {
+        // TODO: Show results
+        alert("You finished!  Get yourself a lemonade");
+    }
 });
