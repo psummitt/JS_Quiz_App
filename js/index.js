@@ -121,7 +121,7 @@ submitBtn.addEventListener("click", () => {
     const answer = getSelected();
 
     if(answer) {
-        if(answer === quizData[currentQuiz], correct) {
+        if(answer === quizData[currentQuiz].correct) {
             score++;
         }
 
