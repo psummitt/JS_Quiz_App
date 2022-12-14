@@ -71,6 +71,7 @@ const quizData = [{
 }
 ];
 
+const quiz = document.getElementById("quiz");
 const questionE1 = document.getElementById('question');
 const a_text = document.getElementById('a_text');
 const b_text = document.getElementById('b_text');
@@ -130,7 +131,7 @@ submitBtn.addEventListener("click", () => {
         if (currentQuiz < quizData.length) {
             loadQuiz();
         } else {
-            quizData.innerHTML = '<h2>You answered ${score}/${quizData.length} questions correctly.</h2>';
+            quizData.innerHTML = '<h2>You answered ${score}/${quizData.length} questions correctly.</h2> <button onclick="location.reload">Reload</button>';
         }
     }
-});
+});eload
